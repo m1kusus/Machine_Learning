@@ -38,7 +38,7 @@ auc_score = roc_auc_score(y_test, proba)
 print(f"AUC Score : {auc_score:.4f}")
 
 plt.figure(figsize=(8,6))
-plt.plot(fpr, tpr, label="Logistic Regression (AUC = {auc_score.4f}")
+plt.plot(fpr, tpr, label=f"Logistic Regression (AUC = {auc_score:.4f}")
 plt.plot([0,1], [0,1], linestyle="--", label="Random Classifier")
 plt.xlabel("False Positive Rate")
 plt.ylabel("True Positive Rate")
